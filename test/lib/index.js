@@ -4,9 +4,7 @@ var expect = require('chai').expect;
 
 describe('index', function () {
     it('must run the tests', function () {
-        var index  = require('../lib/index'),
-            result = index();
-
-        expect(result).to.exist;
+        var index  = require('../lib/index');
+        expect(index).to.exist;
     });
 });
