@@ -1,0 +1,29 @@
+{
+  "name": "browser-lib-template",
+  "version": "1.0.0",
+  "description": "Template for a browser-based library",
+  "main": "index.js",
+  "scripts": {
+    "build": "browserify lib/index.js > dist/my-lib.js",
+    "test:build": "browserify test/lib/index.js > test/tests.js",
+    "test:run": "mocha-phantomjs test/runner.html",
+    "test": "npm run test:build && npm run test:run"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com/RobBollons/browser-lib-template"
+  },
+  "author": "Robert Bollons",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/RobBollons/browser-lib-template/issues"
+  },
+  "homepage": "https://github.com/RobBollons/browser-lib-template",
+  "devDependencies": {
+    "browserify": "^10.2.4",
+    "chai": "^3.0.0",
+    "mocha": "^2.2.5",
+    "mocha-phantomjs": "^3.5.3",
+    "phantomjs": "^1.9.17"
+  }
+}
